@@ -32,3 +32,7 @@ arr = [0, 10]
 k = 1
 sol = Solution()
 print(sol.gas_station(arr,k))        
+
+
+
+
