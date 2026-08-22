@@ -3,9 +3,9 @@ def kth_element(a , b,k):
         a , b = b , a
     n = len(a)
     m = len(b)
-    half = (n+m)//2
-    low = 0
-    high = n 
+    
+    low = max(0 , k-m)
+    high = min(k , n )
     while low <= high :
         partitionA = (low + high)//2
         partitionB = k - partitionA
