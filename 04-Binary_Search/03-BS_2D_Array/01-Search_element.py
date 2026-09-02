@@ -25,5 +25,3 @@ mat = [ [1, 2, 4], [6, 7, 8], [9, 10, 34] ]
 target = 78
 print(Search_2D_Array(mat , target))
 
-
-    
