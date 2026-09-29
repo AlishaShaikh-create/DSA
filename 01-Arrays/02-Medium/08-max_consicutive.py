@@ -25,3 +25,14 @@ print(s.longest_consecutive(nums))
 # Time - O(n3)
 # space - O(1)
 
+# Move Zeroes :
+print("Move zeroes to end")
+def move_zeroes(nums):
+    pos = 0
+    for i in range(len(nums)):
+        if nums[i] != 0:
+            nums[pos] , nums[i] = nums[i] , nums[pos]
+            pos +=1
+    return pos 
+nums = [0, 0, 0, 1, 3, -2]
+print(move_zeroes(nums))
